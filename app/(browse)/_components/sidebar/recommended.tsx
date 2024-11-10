@@ -17,7 +17,7 @@ export const Recommended = ({ data }: RecommendedProps) => {
         <div>
             {showLabel && (
                 <div className="pl-6 mb-4">
-                    <p className="test-sm text-muted-foreground">Recommended!!!</p>
+                    <p className="test-sm text-muted-foreground">Recommended</p>
                 </div>
             )}
             <ul className="space-y-2 px-2">
@@ -26,7 +26,7 @@ export const Recommended = ({ data }: RecommendedProps) => {
                         key={user.id}
                         username={user.username}
                         imageUrl={user.imageUrl}
-                        isLive={true}
+                        isLive={false}
                     />
                 ))}
             </ul>

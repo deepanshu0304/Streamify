@@ -50,6 +50,7 @@ export async function POST(req: Request) {
 
   // Get the ID and type
   const eventType = evt.type;
+  // console .log(eventType)
 
   if (eventType == "user.created") {
     await db.user.create({
@@ -62,6 +63,16 @@ export async function POST(req: Request) {
   }
 
   if (eventType == "user.updated") {
+
+    // const currentUser = await db.user.findUnique({
+    //   where: {
+    //     extrenalUserId: payload.data.id,
+    //   }
+    // });
+
+    // if (!currentUser) {
+    //   return new Response("User not found", { status: 404 });
+    // }
     await db.user.update({
       where: {
         extrenalUserId: payload.data.id,

@@ -15,7 +15,6 @@ interface ActionProps {
 
 export const Actions = ({ isFollowing, userId }: ActionProps) => {
     const [isPending, startTransition] = useTransition();
-
     const handleFollow = () => {
         startTransition(() => {
 

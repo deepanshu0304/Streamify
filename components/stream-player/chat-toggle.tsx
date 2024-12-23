@@ -3,7 +3,7 @@
 import { useChatSidebar } from "@/store/use-chat-sidebar";
 import { ArrowLeftFromLine, ArrowRightFromLine } from "lucide-react";
 import { Hint } from "@/components/hint";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 
 
 export const ChatToggle = () => {

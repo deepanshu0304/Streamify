@@ -5,7 +5,7 @@ import { useConnectionState,useRemoteParticipant, useTracks } from "@livekit/com
 import { OfflineVideo } from "./offline-video";
 import { LoadingVideo } from "./loading-video";
 import { LiveVideo } from "./live-video";
-import { Skeleton } from "../ui/skeleton";
+import { Skeleton } from "@/components/ui/skeleton";
 
 interface VideoProps{
     hostName: string,

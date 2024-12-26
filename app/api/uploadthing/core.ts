@@ -18,8 +18,6 @@ export const ourFileRouter = {
     }).onUploadComplete(async ({ metadata, file }) => {
         try {
         console.log("deepanshu");
-        // console.log(file);
-        console.log(metadata.user.id);
         await db.stream.update({
             where: {
                 userId: metadata.user.id,
@@ -30,9 +28,6 @@ export const ourFileRouter = {
         });
 
         } catch (e) {
-            console.log("*****************")
-            console.log(e);
-            console.log("*****************")
             
         }
         return { fileUrl: file.url };

@@ -7,7 +7,7 @@ export const runtime = "nodejs";
 // Export routes for Next App Router
 export const { GET, POST } = createRouteHandler({
   router: ourFileRouter,
-  config: { callbackUrl: "https://humbly-grateful-toucan.ngrok-free.app/api/uploadthing" },
+  config: { callbackUrl: "https://streamify-u.vercel.app/api/uploadthing" },
 
   // Apply an (optional) custom config:
   // config: { ... },
